@@ -1,0 +1,10 @@
+Manifest-Version: 1.0
+Implementation-Title: testeUNIPE
+Implementation-Version: 0.0.1-SNAPSHOT
+Built-By: andremarllus
+Implementation-Vendor-Id: br.com.hermes
+Build-Jdk: 1.8.0_92
+Implementation-URL: https://projects.spring.io/spring-boot/#/spring-bo
+ ot-starter-parent/aulaUNIPE
+Created-By: Maven Integration for Eclipse
+

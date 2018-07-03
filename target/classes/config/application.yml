@@ -1,0 +1,16 @@
+server:
+   port: 8080
+   servlet:
+      context-path: /
+debug:
+    true      
+
+springfox.documentation.swagger.v2.path: /docs
+logging:
+    level: 
+       org.springframework: ERROR
+elk:
+    ip : 0
+    porta : 0
+    
+   

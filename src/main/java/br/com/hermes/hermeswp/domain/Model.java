@@ -3,28 +3,14 @@ package br.com.hermes.hermeswp.domain;
 import java.io.Serializable;
 import java.time.LocalDateTime;
 
-import javax.persistence.Column;
-import javax.persistence.GeneratedValue;
-import javax.persistence.GenerationType;
-import javax.persistence.Id;
-import javax.persistence.MappedSuperclass;
-import javax.persistence.PrePersist;
-import javax.persistence.PreUpdate;
-
-@MappedSuperclass
 public abstract class Model<ID> implements Serializable {
 
 	private static final long serialVersionUID = 1L;
 	
-	@Id
-	@Column(name = "ID")
-	@GeneratedValue(strategy = GenerationType.SEQUENCE)
 	private ID id;
 
-	@Column(updatable = false, name = "CREATION_DATE")
 	private LocalDateTime creationDate;
 
-	@Column(name = "LAST_UPDATE_DATE")
 	private LocalDateTime lastUpdateDate;
 
 	public ID getId() {
@@ -63,7 +49,6 @@ public abstract class Model<ID> implements Serializable {
 		return false;
 	}
 
-	@PrePersist
 	private void doPrePersist() {
 		this.valid();
 		this.validBeforeRegister();
@@ -81,7 +66,6 @@ public abstract class Model<ID> implements Serializable {
 		this.setLastUpdateDate(LocalDateTime.now());
 	}
 
-	@PreUpdate
 	private void doPreUpdate() {
 		this.valid();
 		this.validBeforeAlter();
