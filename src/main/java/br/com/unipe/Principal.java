@@ -1,4 +1,4 @@
-package br.com.hermes.hermeswp;
+package br.com.unipe;
 
 import java.net.InetAddress;
 import java.net.UnknownHostException;
@@ -11,27 +11,27 @@ import org.springframework.boot.web.servlet.support.SpringBootServletInitializer
 import org.springframework.context.annotation.Import;
 import org.springframework.core.env.Environment;
 
-import br.com.hermes.hermeswp.config.SwaggerConfig;
-import br.com.hermes.hermeswp.util.LoggerPadrao;
+import br.com.unipe.config.SwaggerConfig;
+import br.com.unipe.util.LoggerPadrao;
 
 @SpringBootApplication
 @Import(SwaggerConfig.class)
 @EnableAutoConfiguration
-public class PrincipalHermesWP extends SpringBootServletInitializer {
+public class Principal extends SpringBootServletInitializer {
 
 	@Override
 	protected SpringApplicationBuilder configure(SpringApplicationBuilder application) {
 
-		return application.sources(PrincipalHermesWP.class);
+		return application.sources(Principal.class);
 	}
 
 	public static void main(String[] args) throws UnknownHostException {
-		SpringApplication app = new SpringApplication(PrincipalHermesWP.class);
+		SpringApplication app = new SpringApplication(Principal.class);
 
 		Environment env = app.run(args).getEnvironment();
 
 		LoggerPadrao.startApplication("\n----------------------------------------------------------\n\t" +
-                "Hermes-WP está rodando! Acesse uma das URLs:\n\t" +
+                "aulaUNIPE está rodando! Acesse uma das URLs:\n\t" +
 				"IP do ELK: \t{}\n\t"+
 				"Porta do ELK: \t{}\n\t"+
 				"Ip do Banco: \t{}\n\t"+

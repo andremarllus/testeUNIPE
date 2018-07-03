@@ -1,6 +1,6 @@
 Manifest-Version: 1.0
 Implementation-Title: testeUNIPE
-Implementation-Version: 0.0.1-SNAPSHOT
+Implementation-Version: 1.0.0-SNAPSHOT
 Built-By: andremarllus
 Implementation-Vendor-Id: br.com.hermes
 Build-Jdk: 1.8.0_92
