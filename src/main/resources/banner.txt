@@ -1,0 +1,20 @@
+${AnsiColor.GREEN} 
+${AnsiColor.GREEN}   _    _                                   __          _______  
+${AnsiColor.GREEN}  | |  | |                                  \ \        / /  __ \ 
+${AnsiColor.GREEN}  | |__| | ___ _ __ _ __ ___   ___  ___ _____\ \  /\  / /| |__) |
+${AnsiColor.GREEN}  |  __  |/ _ \ '__| '_ ` _ \ / _ \/ __|______\ \/  \/ / |  ___/ 
+${AnsiColor.GREEN}  | |  | |  __/ |  | | | | | |  __/\__ \       \  /\  /  | |     
+${AnsiColor.GREEN}  |_|  |_|\___|_|  |_| |_| |_|\___||___/        \/  \/   |_|     
+${AnsiColor.GREEN}                                                                 
+${AnsiColor.GREEN}                                                                 
+-------------------------
+${AnsiColor.BRIGHT_BLUE}:: Hermes-WP - Api do Hermes responsável por enviar WhatsApp :: Rodando o Spring Boot ${AnsiColor.GREEN} ${spring-boot.version}::
+--------------------------------------------------##-----------------------------------------
+--------------------------------------------------##----------------------------------------- 
+${AnsiColor.BRIGHT_BLUE} Variavéis de Ambiente:
+${AnsiColor.GREEN} SERVER.PORT=${SERVER_PORT}
+${AnsiColor.GREEN} ELK.IP=${ELK_IP}
+${AnsiColor.GREEN} ELK.PORTA=${ELK_PORTA} 
+${AnsiColor.BRIGHT_BLUE}
+--------------------------------------------------##-----------------------------------------
+--------------------------------------------------##-----------------------------------------

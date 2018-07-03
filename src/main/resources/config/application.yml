@@ -1,0 +1,42 @@
+server:
+   port: 8080
+   servlet:
+      context-path: /hermes-wp
+debug:
+    true      
+
+spring:
+    datasource:
+        type: com.zaxxer.hikari.HikariDataSource
+        url: jdbc:postgresql://localhost:5432/hermes_sms
+        username: postgres
+        password: postgres
+        hikari.minimumIdle: 3
+        hikari.maximumPoolSize: 5
+        hikari.idleTimeout: 30000
+        hikari.poolName: SpringBootJPAHikariCP
+        hikari.maxLifetime: 2000000
+        hikari.connectionTimeout: 30000
+    jpa.show-sql : true
+    jpa.hibernate.ddl-auto : none
+    jpa.database-platform: org.hibernate.dialect.PostgreSQL9Dialect
+    jpa.properties.hibernate.temp.use_jdbc_metadata_defaults: false
+    rabbitmq:
+      host: localhost
+      username: guest
+      password: guest
+
+springfox.documentation.swagger.v2.path: /docs
+logging:
+    level: 
+       org.springframework: ERROR
+
+hermes:
+  rabbitmq:
+    queue: hermes-sms
+          
+elk:
+    ip : 0
+    porta : 0
+    
+   
