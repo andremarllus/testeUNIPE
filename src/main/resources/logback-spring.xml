@@ -15,7 +15,7 @@
 	 </appender>
 	 
 	  <appender name="ARQUIVO-DEBUG" class="ch.qos.logback.core.rolling.RollingFileAppender">
-		<file>/var/log/testeUNIPE/debug.log</file>
+		<file>debug.log</file>
 		<encoder class="ch.qos.logback.classic.encoder.PatternLayoutEncoder">
 			<Pattern>
 				%d{yyyy-MM-dd HH:mm:ss} - %msg%n
@@ -25,7 +25,7 @@
 		<rollingPolicy class="ch.qos.logback.core.rolling.TimeBasedRollingPolicy">
 			<!-- rollover daily -->
 			<fileNamePattern>
-				/var/log/testeUNIPE/debug.%d{yyyy-MM-dd}.%i.log
+				debug.%d{yyyy-MM-dd}.%i.log
             </fileNamePattern>
 			<timeBasedFileNamingAndTriggeringPolicy
 				class="ch.qos.logback.core.rolling.SizeAndTimeBasedFNATP">
@@ -38,7 +38,7 @@
 	</appender>
      
     <appender name="ARQUIVO-INFO" class="ch.qos.logback.core.rolling.RollingFileAppender">
-		<file>/var/log/testeUNIPE/info.log</file>
+		<file>info.log</file>
 		<encoder class="ch.qos.logback.classic.encoder.PatternLayoutEncoder">
 			<Pattern>
 				%d{yyyy-MM-dd HH:mm:ss} - %msg%n
@@ -48,7 +48,7 @@
 		<rollingPolicy class="ch.qos.logback.core.rolling.TimeBasedRollingPolicy">
 			<!-- rollover daily -->
 			<fileNamePattern>
-				/var/log/testeUNIPE/info.%d{yyyy-MM-dd}.%i.log
+				info.%d{yyyy-MM-dd}.%i.log
             </fileNamePattern>
 			<timeBasedFileNamingAndTriggeringPolicy class="ch.qos.logback.core.rolling.SizeAndTimeBasedFNATP">
 				<maxFileSize>10MB</maxFileSize>
@@ -60,7 +60,7 @@
 	</appender>
 	
 	<appender name="ARQUIVO-ERRO" class="ch.qos.logback.core.rolling.RollingFileAppender">
-		<file>/var/log/testeUNIPE/error.log</file>
+		<file>error.log</file>
 		<encoder class="ch.qos.logback.classic.encoder.PatternLayoutEncoder">
 			<Pattern>
 				%d{yyyy-MM-dd HH:mm:ss} - %msg%n
@@ -70,7 +70,7 @@
 		<rollingPolicy class="ch.qos.logback.core.rolling.TimeBasedRollingPolicy">
 			<!-- rollover daily -->
 			<fileNamePattern>
-				/var/log/testeUNIPE/error.%d{yyyy-MM-dd}.%i.log
+				error.%d{yyyy-MM-dd}.%i.log
                 </fileNamePattern>
 			<timeBasedFileNamingAndTriggeringPolicy class="ch.qos.logback.core.rolling.SizeAndTimeBasedFNATP">
 				<maxFileSize>10MB</maxFileSize>
